@@ -1,0 +1,11 @@
+services:
+  labels:
+    build: .
+    environment:
+      PORT: "3100"
+      # e2e-baseline-app, published on the host's port 3000.
+      ITEMS_URL: ${ITEMS_URL:-http://host.docker.internal:3000/api/items}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    ports:
+      - "3100:3100"

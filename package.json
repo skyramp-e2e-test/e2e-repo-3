@@ -1,0 +1,16 @@
+{
+  "name": "e2e-repo-3",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Small Express label service for end-to-end testing",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
